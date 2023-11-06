@@ -39,6 +39,16 @@
     }
     }
 
+    
+  function quitarAciertos (){
+    let listaInputs = document.querySelectorAll(".form-control, .form-select");
+    for(let i = 0; i < listaInputs.length; i++)
+        {listaInputs[i].classList.remove('is-valid');
+    }
+   
+    
+    }
+
 //Valida si el Formulario es correcto.
 function validatarFormularioTickets() {
     quitarErrores();
@@ -161,6 +171,8 @@ precio.value="Total a Pagar: $"+total;
 
 function BorrarCamposCompra (){
   quitarErrores();
+  quitarAciertos();
+
   let listaInputs=document.querySelectorAll(".form-input");
   for(let i=0;i<listaInputs.length;i++)
     {listaInputs[i].value='';
