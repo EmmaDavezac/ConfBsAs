@@ -33,6 +33,16 @@ padding-right: 0.5rem;
     opacity: 1;
     }
 
+    .img-header{
+      height: 700px;
+      background-image: linear-gradient(to right, #00000097,#00000097), url("../Images/ba1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      padding-top: 180px;
+      color: white;        
+  }
   #ConfBA {
     background: black;
     padding: 0px;
